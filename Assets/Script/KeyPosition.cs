@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class KeyPosition : MonoBehaviour
 {
+    public int time;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +17,11 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public int Time
+    {
+        set { time = value; }
+        get { return time; }
+    }
+
 }
